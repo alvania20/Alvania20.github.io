@@ -233,32 +233,57 @@
       </div>
     </footer>
 
+    <!-- Modal Media Sosial (Pengganti Form Contact) -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold">Mari Bekerja Sama!</h5>
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Hubungi Saya</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
+              aria-label="Close"
             ></button>
           </div>
           <div class="modal-body p-4">
-            <div class="mb-3">
-              <label class="form-label">Email Anda</label
-              ><input
-                type="email"
-                class="form-control"
-                placeholder="nama@email.com"
-              />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Pesan</label
-              ><textarea class="form-control" rows="3"></textarea>
-            </div>
-            <div class="d-grid">
-              <button class="btn btn-orange py-2">Kirim Penawaran</button>
+            <p class="text-muted mb-4">
+              Mari terhubung melalui platform profesional saya:
+            </p>
+
+            <!-- Link Sosial Media -->
+            <div class="d-grid gap-3">
+              <!-- LinkedIn -->
+              <a
+                href="https://linkedin.com/in/fawwas-alghifari/"
+                target="_blank"
+                class="btn btn-outline-dark d-flex align-items-center justify-content-center py-3 px-4 shadow-sm"
+              >
+                <i data-lucide="linkedin" class="me-3"></i>
+                <span class="fw-semibold">LinkedIn</span>
+              </a>
+
+              <!-- Behance -->
+              <a
+                href="https://behance.net/fwws2011"
+                target="_blank"
+                class="btn btn-outline-dark d-flex align-items-center justify-content-center py-3 px-4 shadow-sm"
+              >
+                <!-- Catatan: Ikon behance tidak ada di library standar Lucide, 
+                    pastikan Anda memiliki custom icon atau gunakan ikon alternatif -->
+                <i data-lucide="behance" class="me-3"></i>
+                <span class="fw-semibold">Behance</span>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                href="https://github.com/alvania20"
+                target="_blank"
+                class="btn btn-outline-dark d-flex align-items-center justify-content-center py-3 px-4 shadow-sm"
+              >
+                <i data-lucide="github" class="me-3"></i>
+                <span class="fw-semibold">GitHub</span>
+              </a>
             </div>
           </div>
         </div>
