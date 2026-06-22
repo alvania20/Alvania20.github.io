@@ -1,0 +1,179 @@
+:root {
+  --primary-orange: #fd7e14;
+  --dark-text: #333333;
+  --light-bg: #ffffff;
+  --secondary-bg: #f8f9fa;
+  --border-circle: #fff3e0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-text);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* --- Navigasi --- */
+.navbar {
+  padding: 1rem 0;
+  background: white !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.text-orange {
+  color: var(--primary-orange) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 10px 15px !important;
+  color: var(--dark-text) !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-orange) !important;
+}
+
+/* --- Tombol Kustom --- */
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: white !important;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #e86c00;
+  transform: translateY(-2px);
+}
+
+/* --- Hero Section --- */
+.hero {
+  padding: 100px 0;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+.hero-img-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img-circle {
+  width: 350px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 12px solid var(--border-circle);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Section Styling --- */
+.section-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* --- About Me Grid --- */
+.info-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+
+.info-icon {
+  background: var(--border-circle);
+  color: var(--primary-orange);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.info-value {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+/* --- Portofolio --- */
+.project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-cat {
+  font-size: 0.75rem;
+  color: var(--primary-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --- Responsivitas --- */
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero-img-circle {
+    width: 280px;
+    height: 280px;
+  }
+}

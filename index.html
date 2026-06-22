@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Fawwas Alghifari</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >FAWWAS<span class="text-orange">ALGHIFARI</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+          </ul>
+          <button
+            class="btn-orange shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            Hire Me
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero py-5" id="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h5 class="fw-bold mb-1">Halo, Saya</h5>
+            <h5 class="text-orange fw-bold mb-4">Fawwas Alghifari</h5>
+            <div class="hero-img-wrapper">
+              <div class="hero-img-circle shadow mx-auto">
+                <img src="img/Profile.jpg" alt="Fawwas Alghifari" />
+              </div>
+              <div class="mt-4 d-flex justify-content-center gap-3">
+                <i data-lucide="facebook" class="text-dark"></i>
+                <i data-lucide="twitter" class="text-dark"></i>
+                <i data-lucide="instagram" class="text-dark"></i>
+                <i data-lucide="linkedin" class="text-dark"></i>
+              </div>
+            </div>
+            <h1 class="mt-4">
+              <span class="text-dark">Web</span> <br />Developer
+            </h1>
+            <p class="text-muted mt-3 mx-auto" style="max-width: 600px">
+              Spesialis dalam pembuatan desain UI/UX yang intuitif dan
+              pengembangan Full Stack yang tangguh.
+            </p>
+            <div class="mt-4">
+              <button
+                class="btn-orange px-5 py-3 shadow"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+              >
+                Pelajari Lebih Lanjut
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">About Me</h2>
+          <p class="text-muted mb-5">
+            Pengenalan singkat mengenai latar belakang saya.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="user"></i></div>
+              <div>
+                <p class="info-label">Full Name</p>
+                <p class="info-value">Fawwas Alghifari</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="graduation-cap"></i></div>
+              <div>
+                <p class="info-label">Education</p>
+                <p class="info-value">Univ. Bina Sarana Informatika</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="briefcase"></i></div>
+              <div>
+                <p class="info-label">Pekerjaan</p>
+                <p class="info-value">UI/UX & Full Stack Dev</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <p class="info-label">Contact</p>
+                <p class="info-value">fawwasalghifari00@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="heart"></i></div>
+              <div>
+                <p class="info-label">Hobi</p>
+                <p class="info-value">Coding, Design, Traveling</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <p class="info-label">Alamat</p>
+                <p class="info-value">Ciputat, Tangerang Selatan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Portofolio</h2>
+          <p class="text-muted mb-5">
+            Beberapa proyek terbaru yang telah saya kerjakan.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a
+              href="https://www.behance.net/gallery/251512697/Portofolio-MekanikOn"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card project-card">
+                <img
+                  src="img/mekanikon.png"
+                  class="project-img"
+                  alt="MekanikOn"
+                />
+                <div class="card-body">
+                  <p class="project-cat">UI/UX Design</p>
+                  <h5 class="fw-bold">MekanikOn Study Case</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.behance.net/gallery/251268559/Portofilio-2026"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card project-card">
+                <img
+                  src="img/portofolio_2026.png"
+                  class="project-img"
+                  alt="Portfolio 2026"
+                />
+                <div class="card-body">
+                  <p class="project-cat">Portfolio</p>
+                  <h5 class="fw-bold">Portfolio Design</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://drive.google.com/file/d/1VYyLr79Mki6IChBkAoVwg-fRN_qUTsZU/view?usp=sharing"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div class="card project-card">
+                <img
+                  src="img/Gadgetstore.png"
+                  class="project-img"
+                  alt="Proyek 3"
+                />
+                <div class="card-body">
+                  <p class="project-cat">Fullstack Development</p>
+                  <h5 class="fw-bold">E-Commerce Gadget Store</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Fawwas Alghifari.</p>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Mari Bekerja Sama!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="mb-3">
+              <label class="form-label">Email Anda</label
+              ><input
+                type="email"
+                class="form-control"
+                placeholder="nama@email.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pesan</label
+              ><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-orange py-2">Kirim Penawaran</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
