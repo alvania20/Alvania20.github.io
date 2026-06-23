@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Fawwas Alghifari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    /* Warna Utama */
+    .text-brand-orange { color: #fd7e14 !important; }
+
+    /* Navigasi - Dibuat putih bersih agar senada dengan background */
+    .navbar { background-color: #ffffff !important; border-bottom: 1px solid #e0e0e0; }
+    .navbar .nav-link { transition: color 0.3s ease; color: #333; }
+    .navbar .nav-link:hover { color: #fd7e14 !important; }
+
+    /* Body & Hero Section - Menggunakan warna terang yang lembut */
+    body { font-family: "Plus Jakarta Sans", sans-serif; background-color: #f9f9f9; color: #1d1d1f; }
+    
+    .hero-section {
+        padding: 100px 0;
+        background-color: #f9f9f9; 
+        color: #1d1d1f; 
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-weight: 600;
+        font-size: 3.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+        color: #6e6e73 !important; /* Abu-abu Apple */
+        margin-top: 20px;
+        font-weight: 400;
+    }
+
+    /* Content Card - Diberi sedikit shadow agar terlihat melayang */
+    .content-card { 
+        background: white; 
+        padding: 40px; 
+        border-radius: 20px; 
+        border: none; /* Dihapus border kaku */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Shadow lebih halus */
+        transition: transform 0.3s ease; 
+        margin-bottom: 30px; 
+    }
+    .content-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+    /* Timeline & Badge */
+    .timeline-item { border-left: 4px solid #fd7e14; padding-left: 25px; margin-bottom: 40px; position: relative; }
+    .timeline-item::before { content: ""; position: absolute; left: -11px; top: 0; width: 18px; height: 18px; border-radius: 50%; background: #fd7e14; border: 4px solid white; }
+    .badge-custom { background: #f5f5f5; color: #fd7e14; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; margin: 5px; display: inline-block; }
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">
+          FAWWAS<span class="text-brand-orange">ALGHIFARI</span> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="index.html">Kembali</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <body>
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="mb-3">Halo! Senang bertemu dengan Anda.</h1>
+            <p class="lead text-white-50">
+            Saya Fawwas Alghifari. Saya berfokus pada pengembangan aplikasi dan desain antarmuka yang mengutamakan kenyamanan pengguna.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <section class="content-card">
+            <h3 class="section-title mb-4">
+              <i class="fa fa-briefcase text-warning me-2"></i>Pengalaman
+              Terkait
+            </h3>
+
+            <div class="timeline-item">
+                <h5 class="fw-bold">Internship Product Design UI/UX | MNC Innovation Center</h5>
+                <p class="text-muted small mb-2">Nov 2022 – Des 2022</p>
+                <ul class="text-secondary small ps-3">
+                    <li>Memahami elemen UI/UX dan metodologi Design Thinking.</li>
+                    <li>Melakukan *Generative Research* serta sesi wawancara pengguna.</li>
+                    <li>Mengolah hasil wawancara untuk menyusun *User Persona* dan *Affinity Diagram*.</li>
+                    <li>Menentukan fase *How-Might We*, ide solusi, serta *Matrix Priority*.</li>
+                    <li>Menerapkan proses dasar UX Design, *User Flow*, dan *Wireframing* (Lo-Fi).</li>
+                    <li>Menguasai dasar UI Design: Tipografi, *Line Spacing*, *Coloring*, *Grid*, UX Law, dan *Responsive Web*.</li>
+                    <li>Mengimplementasikan *Wireframing* ke dalam bentuk *High-Fidelity* (Hi-Fi).</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+              <h5 class="fw-bold">Internship QA/QC | MNC Innovation Center</h5>
+              <p class="text-muted small mb-2">Okt 2022 – Nov 2022</p>
+              <p class="text-secondary">
+                Melakukan pengujian website secara manual dan otomatis
+                menggunakan Selenium IDE serta stres-testing pada web server
+                dengan Apache JMeter.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+                <h5 class="fw-bold">Internship Programmer Python | MNC Innovation Center</h5>
+                <p class="text-muted small mb-2">Sep 2022 – Okt 2022</p>
+                <ul class="text-secondary small ps-3">
+                    <li>Mempelajari konsep database, FastAPI, RESTful API, HTTP, SQL, JSON, dan relasi database.</li>
+                    <li>Mengimplementasikan fitur sistem *login* menggunakan framework FastAPI.</li>
+                    <li>Mengelola dan memproses data pengguna menggunakan bahasa pemrograman Python.</li>
+                </ul>
+            </div>
+          </section>
+
+            <section class="content-card">
+                <h3 class="section-title mb-4">
+                    <i class="fa fa-users text-warning me-2"></i>Organisasi
+                </h3>
+                
+                <div class="timeline-item">
+                    <h5 class="fw-bold">Google Developer Student Club (GDSC) UIN JKT</h5>
+                    <p class="text-muted small mb-2 fw-semibold">Member of UI/UX Class | Sept 2021 – Sept 2022</p>
+                    
+                    <ul class="text-secondary small ps-3">
+                        <li>Memahami konsep dasar UI dan UX secara mendalam.</li>
+                        <li>Membangun *wireframe* dan kerangka desain (*design framework*) untuk tampilan aplikasi.</li>
+                        <li>Melakukan analisis mendalam terhadap kenyamanan serta pengalaman pengguna pada antarmuka.</li>
+                        <li>Berkolaborasi dengan 3 anggota tim untuk melakukan desain ulang (*redesign/reform*) pada Landing Page GDSC UIN JKT.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+          <section class="content-card">
+            <h4 class="section-title mb-4">
+              <i class="fa fa-graduation-cap text-warning me-2"></i>Pendidikan
+            </h4>
+            <ul class="list-unstyled">
+              <li class="mb-4">
+                <div class="fw-bold text-dark">S1 Teknologi Informasi</div>
+                <div class="small text-muted">
+                  Bina Sarana Informatika (2019-2023)
+                </div>
+              </li>
+              <li class="mb-4">
+                <div class="fw-bold text-dark">Fullstack Web Programming</div>
+                <div class="small text-muted">
+                  Eduwork (Mei 2026 - Jul 2026)
+                </div>
+              </li>
+              <li class="mb-4">
+                <div class="fw-bold text-dark">Belajar Dasar UX Design</div>
+                <div class="small text-muted">
+                  Dicoding (Apr 2026 - Mei 2026)
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="content-card">
+            <h4 class="section-title mb-4">Core Skills</h4>
+            <div class="d-flex flex-wrap">
+              <span class="badge-custom">UI/UX Design</span>
+              <span class="badge-custom">QA Automation</span>
+              <span class="badge-custom">Python</span>
+              <span class="badge-custom">Laravel</span>
+              <span class="badge-custom">Selenium</span>
+              <span class="badge-custom">FastAPI</span>
+              <span class="badge-custom">JMeter</span>
+              <span class="badge-custom">Git</span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+    <section class="container my-5">
+        <div class="content-card text-center py-5 shadow-sm border-0" style="background: linear-gradient(135deg, #2d3436 0%, #000 100%); color: white;">
+            <h3 class="fw-bold mb-3">Siap untuk Berkolaborasi?</h3>
+            <p class="text-white-50 mb-4">Unduh resume lengkap saya untuk melihat detail pengalaman dan portofolio teknis secara lebih mendalam.</p>
+            
+            <!-- Perubahan ada di atribut target dan rel di bawah ini -->
+            <a href="files/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-lg px-4 py-3 fw-bold shadow" style="background-color: #fd7e14; color: white; border-radius: 12px; transition: 0.3s;">
+            <i class="fa fa-download me-2"></i> Unduh PDF Resume
+            </a>
+        </div>
+    </section>
+  <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4 justify-content-between align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <h4 class="fw-bold mb-2">
+              FAWWAS<span style="color: #fd7e14">ALGHIFARI</span>
+            </h4>
+            <p class="text-secondary small">
+              Membangun solusi digital yang kreatif dan inovatif.
+            </p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <a
+              href="https://linkedin.com/in/fawwas-alghifari/"
+              class="text-white mx-2"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://behance.net/fwws2011" class="text-white mx-2"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+            <a href="https://github.com/alvania20" class="text-white mx-2"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-secondary small">
+          <p class="mb-0">&copy; 2026 Fawwas Alghifari. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+</html>
